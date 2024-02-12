@@ -1,0 +1,121 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151413;
+  background-color: #fffdfc;
+}
+
+.main-nav {
+  background-color: #151413;
+}
+
+.site-navigation-item a {
+  color: #fffdfc;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.site-navigation-item a.active {
+  text-decoration: underline;
+  text-decoration-color: #dc5b34;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-underline-position: under;
+}
+.service-navigation-item a {
+  color: #fffdfc;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo {
+  margin: 0;
+  padding: 38px 58px 25px;
+}
+.site-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0 58px 25px;
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid rgb(255, 253, 252, 0.2);
+}
+.service-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  list-style: none;
+  padding: 25px 58px;
+  margin: 0;
+  border-bottom: 1px solid rgb(255, 253, 252, 0.2);
+}
+.social-list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 25px 58px 30px;
+  margin: 0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+header {
+  max-width: 319px;
+  width: 100%;
+}
+main {
+  max-width: 1055px;
+  width: 100%;
+}
+.breadсrumbs {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  gap: 24px;
+  padding: 52px 52px 20px;
+}
+.breadсrumbs-item a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #151413;
+}
+.breadсrumbs-item {
+  text-transform: uppercase;
+  position: relative;
+}
+.breadсrumbs-item:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 20%;
+  width: 4px;
+  height: 8px;
+  background-image: url("../img/arrow.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.seed-info {
+  margin: 0px;
+  padding-left: 52px;
+  padding-right: 103px;
+}
